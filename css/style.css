@@ -3,19 +3,21 @@
   padding: 0;
 }
 body {
-  background: #f1f1f1;
-  color: #444;
+  background-image: url("http://wx2.sinaimg.cn/large/005Z44hOly1fc8xfzemr9j30sg0iywfj.jpg");
+  background-repeat: repeat-x;
+}
+color color-font {
   font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
   font-size: 14px;
   text-shadow: 0 0 1px transparent;
 }
 @media screen and (max-width: 1260px) {
-  body {
+  color color-font {
     margin: 0 30px;
   }
 }
 @media screen and (max-width: 600px) {
-  body {
+  color color-font {
     font-size: 12px;
   }
 }
