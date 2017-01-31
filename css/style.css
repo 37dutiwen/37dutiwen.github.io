@@ -512,7 +512,7 @@ article footer .categories:before {
   left: 1px;
 }
 article footer .tags:before {
-content
+  content: '\f02b';
   top: 3px;
   left: 2px;
 }
@@ -581,7 +581,7 @@ article footer .addthis iframe {
   text-decoration: none;
 }
 .archive-post.tag:before {
-  content: '#';
+  content: '\f02b';
 }
 .archive-post.category:before {
   content: '\f07b';
