@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html xmlns:wb="http://open.weibo.com/wb">
 <head>
   <meta charset="utf-8">
   
@@ -21,9 +21,10 @@
   <link href="/favicon.png" rel="icon">
   <link rel="alternate" href="/atom.xml" title="37℃体温" type="application/atom+xml">
   <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
-  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <!--[if lt IE 9]><script src="//cdn.bootcss.com/html5shiv/r29/html5.js"></script><![endif]-->
   
 
+  <script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
 </head>
 
 
@@ -68,10 +69,62 @@
     <a href="/tags/自己/">自己</a>
   </div>
 
-        
-      
-      <div class="clearfix"></div>
+   
+      <div class="clearfix">
+	<div class ="post-donate">
+    <div id="donate_board" class="donate_bar center">
+        <a id="btn_donate" class="btn_donate" href="javascript:;" title="谢谢你的打赏"></a>
+        <span class="donate_txt">
+           ↑<br>
+		   谢谢你的支持！么么哒！
+        </span>
+        <br>
+      </div>
+	<div id="donate_guide" class="donate_bar center hidden" >
+		<!-- 支付宝打赏图案
+		<img src="http://wx3.sinaimg.cn/large/005Z44hOly1fc9qcjidi4j3078077aat.jpg" alt="支付宝打赏">-->
+		<!-- 微信打赏图案 -->
+		<img src="http://wx3.sinaimg.cn/large/005Z44hOly1fc9qcjidi4j3078077aat.jpg" alt="微信打赏">
+    </div>
+	<script type="text/javascript">
+		document.getElementById('btn_donate').onclick = function(){
+			$('#donate_board').addClass('hidden');
+			$('#donate_guide').removeClass('hidden');
+		}
+	</script>
+</div>
+
+  <!-- JiaThis Button BEGIN -->
+<div  class="jiathis_style_32x32">
+<a class="jiathis_button_qzone"></a>
+<a class="jiathis_button_tsina"></a>
+<a class="jiathis_button_tqq"></a>
+<a class="jiathis_button_weixin"></a>
+<a class="jiathis_button_renren"></a>
+<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+var jiathis_config={
+	summary:"",
+	ralateuid:{
+		"tsina":"5880610320"
+	},
+	shortUrl:false,
+	hideMore:false
+}
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code_mini/jia.js" charset="utf-8"></script>
+
+<!-- JiaThis Button END -->
+
+
+
+
+</div>
+
       </footer>
+
   </div>
 </article>
 
@@ -83,15 +136,13 @@
 
 </div></div>
     <aside id="sidebar" class="alignright">
-  <div class="search">
-    <form action="//www.baidu.com/baidu" method="get" accept-charset="utf-8" class="search-form" a target="_blank">
-    <input type="search" name="word" maxlength="20" class="search-form-input" placeholder="搜索">
-    <input name=tn type=hidden value="bds">
-    <input name=cl type=hidden value="3">
-    <input name=ct type=hidden value="2097152">
-    <input type="hidden" name="si" value="www.tiwen37.com">
-  </form>
+  <center><div class="widget tag">
+  <h3 class="title">About Me</h3>
+  <ul class="entry">37℃，一个让人熟知的温度。</br>37℃是爱的温度</br>是心灵碰撞的温度</br>是肉体结合的温度</br>这就是我 37℃</br>
+    新浪微博</br><wb:follow-button uid="5880610320" type="red_4" width="100%" height="64" ></wb:follow-button></br>
+    微信</br><img src="http://wx3.sinaimg.cn/large/005Z44hOly1fc9qcjidi4j3078077aat.jpg" width="100%"></ul>
 </div>
+</center>
 
 
   
@@ -121,12 +172,14 @@
 
   
 
-  
-<div class="widget tagcloud">
-  <h3 class="title">标签云</h3>
-  <div class="entry">
-    <a href="/tags/希望/" style="font-size: 10px;">希望</a> <a href="/tags/自己/" style="font-size: 10px;">自己</a> <a href="/tags/过年/" style="font-size: 10px;">过年</a>
-  </div>
+  <div class="search">
+    <form action="//www.baidu.com/baidu" method="get" accept-charset="utf-8" class="search-form" a target="_blank">
+    <input type="search" name="word" maxlength="20" class="search-form-input" placeholder="搜索">
+    <input name=tn type=hidden value="bds">
+    <input name=cl type=hidden value="3">
+    <input name=ct type=hidden value="2097152">
+    <input type="hidden" name="si" value="www.tiwen37.com">
+  </form>
 </div>
 
 </aside>
