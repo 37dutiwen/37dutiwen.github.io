@@ -119,20 +119,15 @@ var jiathis_config={
 <!-- JiaThis Button END -->
 
 
-
-
 </div>
-
-      </footer>
-
-  </div>
+       </footer>
+</div>
 </article>
 
-
-<section id="comment">
-  
-</section>
-
+   <section id="comment">
+  <div class="ds-thread" data-thread-key="2017/01/30/如何继续/" data-title="如何继续" data-url="http://www.tiwen37.com/2017/01/30/如何继续/"></div>
+ </section>
+ 
 
 </div></div>
     <aside id="sidebar" class="alignright">
@@ -193,8 +188,31 @@ var jiathis_config={
 <div class="clearfix"></div></footer>
   <script src="//apps.bdimg.com/libs/jquery/2.0.3/jquery.min.js
 "></script>
+<script>
+  var duoshuoQuery = {short_name:"tiwen37"};
 
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0]
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
 
+  $(function(){
+    var tag_color = "undefined".split(",");
+
+    $.each($('.tagcloud a'),function(){
+      var get_random = parseInt(Math.random()*10)
+      $(this).css({
+        'backgroundColor':tag_color[get_random]
+      })
+    })
+
+    whblack.init("undefined")
+  })
+</script>
 
 </body>
 </html>
