@@ -468,7 +468,7 @@ article footer .categories:before {
   left: 1px;
 }
 article footer .tags:before {
-  content: '\f02b';
+content
   top: 3px;
   left: 2px;
 }
@@ -535,9 +535,6 @@ article footer .addthis iframe {
 .archive-post a:hover {
   color: #258fb8;
   text-decoration: none;
-}
-.archive-post.tag:before {
-  content: '\f02b';
 }
 .archive-post.category:before {
   content: '\f07b';
