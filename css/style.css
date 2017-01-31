@@ -627,6 +627,7 @@ article footer .addthis iframe {
   font-size: 1em;
   border-bottom: 1px solid #ddd;
   font-weight: normal;
+  background-color: #91cef5;
 }
 #sidebar .widget .entry {
   font-size: 0.9em;
